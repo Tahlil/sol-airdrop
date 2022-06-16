@@ -13,3 +13,19 @@ const secretKey = wallet._keypair.secretKey;
 
 console.log(publicKey);
 console.log(secretKey);
+
+const getWalletBalance = async() => {
+    try {
+        const connection = new Connection(clusterApiUrl('devnet'), 'confirmed');
+        const walletBalance = await connection.getBalance(publicKey);
+        console.log(`Wallet balance is ${walletBalance}`);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+const main = async() => {
+    await getWalletBalance();
+}
+
+main();
