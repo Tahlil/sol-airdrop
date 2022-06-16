@@ -15,8 +15,8 @@ const secretKey = wallet._keypair.secretKey;
 const getWalletBalance = async() => {
     try {
         const connection = new Connection(clusterApiUrl('devnet'), 'confirmed');
-        const walletBalance = await connection.getBalance(publicKey);
-        console.log(`Wallet balance is ${walletBalance}`);
+        const walletBalance = await connection.getBalance(publicKey) / LAMPORTS_PER_SOL || 0;
+        console.log(`Wallet balance is ${walletBalance} Sol`);
     } catch (error) {
         console.error(error);
     }
