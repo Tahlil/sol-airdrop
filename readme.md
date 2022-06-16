@@ -1,5 +1,5 @@
 # Solana Airdrop
-This node app created a account in solana testnet and airdrop 2 sol in that account
+This node app creates an account in Solana testnet and airdrop 2 sol in that account and also checks the balance.
 
 ## Requirements
 
