@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Tahlil/sol-airdrop/issues"
   },
-  "homepage": "https://github.com/Tahlil/sol-airdrop#readme"
+  "homepage": "https://github.com/Tahlil/sol-airdrop#readme",
+  "dependencies": {
+    "@solana/web3.js": "^1.44.0"
+  }
 }
